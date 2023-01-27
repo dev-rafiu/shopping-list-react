@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 1rem 2rem;
+  width: min(90%, 400px);
+  background-color: rgb(234, 242, 292);
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+form {
+  width: 100%;
+  border: 5px dotted rgb(201, 75, 75);
+  padding: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid white;
+  outline: none;
+}
+
+input:focus {
+  outline: 1px solid rgb(201, 75, 75);
+}
+
+::placeholder {
+  font-size: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+  padding: 0.5rem 3rem;
+}
+
+button:focus {
+  outline: 1px solid rgb(201, 75, 75);
+}
+
+button[type="submit"] {
+  border: 1px solid rgb(201, 75, 75);
+  background: white;
+}
+
+ul {
+  margin: 2rem 0;
+  background: rgb(234, 242, 292);
+}
+
+.list-item {
+  background: white;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
